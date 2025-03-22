@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of SHASHIKIRAN M, a Computer Science Student skilled in Java, Python, and QA Testing.">
+    <meta name="keywords" content="SHASHIKIRAN M, Portfolio, Student, Java, Python, QA Testing">
+    <meta name="author" content="SHASHIKIRAN M">
+    <title>SHASHIKIRAN M - Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #000; /* Black background */
+            color: #fff; /* White text */
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a, #333); /* Dark gradient */
+            color: #fff;
+            text-align: center;
+            padding: 4em 0;
+            position: relative;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #007bff; /* Blue border */
+            margin: 0 auto;
+            background: url('photo.jpg') no-repeat center center/cover; /* Replace with your image path */
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 0.5em 0 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; /* Blue on hover */
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em auto;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #007bff; /* Blue headings */
+            font-size: 2em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            margin: 0.5em 0;
+            padding: 0.75em;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        ul li:hover {
+            background: rgba(255, 255, 255, 0.2); /* Lighter on hover */
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            padding: 1.5em;
+            border-radius: 8px;
+            margin: 1em 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card h3 {
+            color: #007bff; /* Blue project title */
+            margin-top: 0;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            background: #007bff; /* Blue button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 0.75em 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 1.5em;
+                margin: 1.5em auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-photo"></div>
+        <h1>SHASHIKIRAN M</h1>
+        <p>Computer Science Student | Java | Python | QA Testing</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Computer Science student with a strong foundation in programming and software development. 
+            I specialize in Java, Python, and QA Testing, and I enjoy solving complex problems through innovative solutions. 
+            My goal is to contribute to impactful projects and continuously grow as a professional in the tech industry.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>HTML & CSS</li>
+            <li>Manual QA Testing</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Traffic Sign Recognition System using CNN</h3>
+            <p>
+                Developed a system to detect and recognize traffic signs using Convolutional Neural Networks (CNN). 
+                This project leverages image processing techniques to improve road safety and autonomous driving systems.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>E-Commerce Website</h3>
+            <p>
+                Designed and implemented a fully functional e-commerce website using HTML, CSS, and JavaScript. 
+                The website includes features like product search, cart management, and user authentication.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Aksheyaa College of Arts and Science</strong> - Bachelor of Science in Computer Science (2023-2026)</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <div style="text-align: center;">
+            <a href="Resume.pdf" target="_blank" class="download-button">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:shashikiran86802@gmail.com" style="color: #007bff;">shashikiran86802@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SHASHIKIRAN M. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
